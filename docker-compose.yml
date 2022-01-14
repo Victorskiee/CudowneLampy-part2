@@ -1,0 +1,20 @@
+version: '3.3'
+
+services:
+  be_179976_presta:
+    image: victorskiee/be_179976
+    ports:
+      - 17997:80
+      - 17998:443
+    restart: always
+    environment:
+      PS_INSTALL_AUTO: 0
+      PS_ERASE_DB: 0
+      DB_HOST: actina15.maas
+      DB_USER: BE_179976
+      DB_PASSWD: haslo
+      DB_NAME: BE_179976
+      PS_DEV_MODE: 0
+      ALLOW_OVERRIDE: 1
+    deploy:
+      replicas: 1
