@@ -16,5 +16,7 @@ services:
       DB_NAME: BE_179976
       PS_DEV_MODE: 0
       ALLOW_OVERRIDE: 1
+      PS_DOMAIN: localhost:17997
+      PS_DOMAIN_SSL: localhost:17998
     deploy:
       replicas: 1
